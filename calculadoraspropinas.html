@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="./css/estilo.css" />
+</head>
+<body>
+
+  <h1 class="title">SPLIT<br>TER</h1>
+
+  <div class="card">
+
+    
+    <div class="left">
+
+      <label>Bill</label>
+      <div class="input-group">
+        <img src="./Imagenes/icon-dollar.svg" class="icon" alt="dollar">
+        <input type="number" id="bill" placeholder="0">
+      </div>
+
+      <label>Select Tip %</label>
+      <div class="tips">
+        <button data-tip="5">5%</button>
+        <button data-tip="10" class="active">10%</button>
+        <button data-tip="15">15%</button>
+        <button data-tip="25">25%</button>
+        <button data-tip="50">50%</button>
+        <input type="number" id="customTip" placeholder="Custom">
+      </div>
+
+      <label>
+        Number of People
+        <span id="error">Can't be zero</span>
+      </label>
+      <div class="input-group">
+        <img src="./Imagenes/icon-person.svg" class="icon" alt="person">
+        <input type="number" id="people" placeholder="0">
+      </div>
+
+    </div>
+
+    
+    <div class="right">
+
+      <div class="result">
+        <div>
+          <p>Tip Amount</p>
+          <span>/ person</span>
+        </div>
+        <h2 id="tipAmount">$0.00</h2>
+      </div>
+
+      <div class="result">
+        <div>
+          <p>Total</p>
+          <span>/ person</span>
+        </div>
+        <h2 id="total">$0.00</h2>
+      </div>
+
+      <button id="reset">RESET</button>
+
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #cfeaea;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  color: #3b6f6b;
+}
+
+.card {
+  background: #fff;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  width: 700px;
+}
+
+.left {
+  flex: 1;
+}
+
+.left label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #5e7a7d;
+}
+
+.left input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background: #f3f8fb;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.tips button {
+  padding: 10px;
+  background: #00494d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tips button.active,
+.tips button:hover {
+  background: #26c0ab;
+  color: #00494d;
+}
+
+.tips input {
+  text-align: center;
+}
+
+#error {
+  color: red;
+  font-size: 12px;
+  float: right;
+  display: none;
+}
+
+.right {
+  background: #00494d;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.result h2 {
+  color: #26c0ab;
+  font-size: 32px;
+}
+
+.right button {
+  background: #26c0ab;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
